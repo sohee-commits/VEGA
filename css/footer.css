@@ -7,6 +7,8 @@ footer {
 	flex-direction: column;
 	gap: 2rem;
 	align-items: center;
+
+	border-top: 1px solid var(--gray);
 }
 
 footer img {
@@ -15,11 +17,14 @@ footer img {
 }
 
 footer ul {
-	list-style: none;
+	padding: 0;
+
 	display: flex;
 	flex-wrap: wrap;
 	gap: 2rem;
 	justify-content: center;
+
+	list-style: none;
 }
 
 .authors {

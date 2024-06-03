@@ -25,7 +25,9 @@
         </div>
         <img src="./assets/logotype-icon.svg" alt="логотип ВЕГА">
       </section>
+
       <img src="./assets/icons/action.svg" alt="иконка грузовика в пути" class="action">
+
       <section class="services" id="services">
         <h2>
           Индивидуальные решения <br> для <span class="yellow">вашего бизнеса</span>
@@ -34,7 +36,9 @@
           <!-- card -->
           <section class="service">
             <div class="title">
-              <img src="./assets/icons/icons8-truck-100.png" alt="иконка грузовика">
+              <div>
+                <img src="./assets/icons/icons8-truck-100.png" alt="иконка грузовика">
+              </div>
               <h4>Тентовые перевозки</h4>
             </div>
             <div class="line">
@@ -51,7 +55,9 @@
           <!-- card -->
           <section class="service">
             <div class="title">
-              <img src="./assets/icons/icons8-truck-100.png" alt="иконка грузовика">
+              <div>
+                <img src="./assets/icons/icons8-truck-100.png" alt="иконка грузовика">
+              </div>
               <h4>Изотермические перевозки</h4>
             </div>
             <div class="line">
@@ -68,7 +74,9 @@
           <!-- card -->
           <section class="service">
             <div class="title">
-              <img src="./assets/icons/icons8-truck-100.png" alt="иконка грузовика">
+              <div>
+                <img src="./assets/icons/icons8-truck-100.png" alt="иконка грузовика">
+              </div>
               <h4>Рефрижераторные перевозки</h4>
             </div>
             <div class="line">
@@ -85,7 +93,9 @@
           <!-- card -->
           <section class="service">
             <div class="title">
-              <img src="./assets/icons/icons8-truck-100.png" alt="иконка грузовика">
+              <div>
+                <img src="./assets/icons/icons8-truck-100.png" alt="иконка грузовика">
+              </div>
               <h4>Экспедирование и Логистика</h4>
             </div>
             <div class="line">
@@ -102,7 +112,9 @@
           <!-- card -->
           <section class="service">
             <div class="title">
-              <img src="./assets/icons/icons8-truck-100.png" alt="иконка грузовика">
+              <div>
+                <img src="./assets/icons/icons8-truck-100.png" alt="иконка грузовика">
+              </div>
               <h4>Бортовые перевозки</h4>
             </div>
             <div class="line">
@@ -126,7 +138,7 @@
           <p>24 часа в сутки, 7 дней в неделю</p>
         </div>
         <div class="pro">
-          <img src="./assets/wombo-pro-1.svg" alt="иконка 10, символизирующая 10 лет работы нашей компании">
+          <img src="./assets/wombo-pro-1.svg" alt="иконка числа 10, символизирующая 10 лет работы нашей компании">
           <h4>Многолетний опыт в нашей сфере</h4>
           <p>Тенденция к совершенству уже 10 лет</p>
         </div>
