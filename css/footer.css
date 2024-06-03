@@ -17,12 +17,14 @@ footer img {
 footer ul {
 	list-style: none;
 	display: flex;
+	flex-wrap: wrap;
 	gap: 2rem;
 	justify-content: center;
 }
 
 .authors {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 1rem;
 	justify-content: space-between;
 
@@ -42,4 +44,5 @@ footer *,
 .authors * {
 	color: var(--gray);
 	font-size: 0.875rem;
+	text-align: center;
 }
