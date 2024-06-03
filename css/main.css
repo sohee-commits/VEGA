@@ -8,11 +8,20 @@
 body {
 	margin: 0;
 	padding: 0;
+	background-color: var(--black);
 }
 
 * {
 	color: var(--white);
 	font-family: 'Jost', sans-serif;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+h4 {
+	font-size: 1.25rem;
 }
 
 small {
@@ -26,4 +35,25 @@ a {
 
 a:hover {
 	text-decoration: underline;
+}
+
+.yellow {
+	font-weight: normal;
+	color: var(--main-color);
+}
+
+.bold {
+	font-weight: bold;
+}
+
+main > section:not(.summ) {
+	padding: 2rem;
+}
+
+/* media queries */
+
+@media (max-width: 768px) {
+	h2 {
+		font-size: 1.5rem;
+	}
 }
