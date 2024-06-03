@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Вега.Логистика - Доставка грузов по всей России</title>
     <link rel="shortcut icon" href="./assets/logotype-icon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/index.css">
   </head>
 
@@ -136,23 +135,39 @@
         <h2>
           Нам <span class="yellow">доверяют</span> свои грузы
         </h2>
-        <ul>
-          <li>
-            <img src="./assets/logos/monetka.svg" alt="логотип магазна монетка">
-          </li>
-          <li>
-            <img src="./assets/logos/magnit.svg" alt="логотип магазна магнит">
-          </li>
-          <li>
-            <img src="./assets/logos/lenta.svg" alt="логотип магазна лента">
-          </li>
-          <li>
-            <img src="./assets/logos/pyatorochka.svg" alt="логотип магазна пятерочка">
-          </li>
-          <li>
-            <img src="./assets/logos/lab-industries.png" alt="логотип магазна lab industries (henkel)">
-          </li>
-        </ul>
+        <div class="companies">
+          <img src="./assets/logos/monetka.svg" alt="логотип магазна монетка">
+          <img src="./assets/logos/magnit.svg" alt="логотип магазна магнит">
+          <img src="./assets/logos/pyatorochka.svg" alt="логотип магазна пятерочка">
+          <img src="./assets/logos/lenta.svg" alt="логотип магазна лента">
+          <img src="./assets/logos/lab-industries.png" alt="логотип магазна lab industries (henkel)">
+        </div>
+      </section>
+      <section class="news">
+        <div class="heading-con">
+          <h2>Последние новости</h2>
+          <a href="./news.php" class="bold">
+            Смотреть все&nbsp;&nbsp;<span class="arrow-right">></span>
+          </a>
+        </div>
+        <section class="news-con">
+          <a href="./news.php" class="new">
+            <h3>Пример очень интересной новости в две строки</h3>
+            <small class="bold">29.05.2024</small>
+          </a>
+          <a href="./news.php" class="new">
+            <h3>Пример очень интересной новости в две строки</h3>
+            <small class="bold">29.05.2024</small>
+          </a>
+          <a href="./news.php" class="new">
+            <h3>Пример очень интересной новости в две строки</h3>
+            <small class="bold">29.05.2024</small>
+          </a>
+          <a href="./news.php" class="new">
+            <h3>Пример очень интересной новости в две строки</h3>
+            <small class="bold">29.05.2024</small>
+          </a>
+        </section>
       </section>
     </main>
   </body>
