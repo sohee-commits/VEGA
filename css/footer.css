@@ -1,0 +1,45 @@
+:root {
+	--gray: rgb(127, 138, 142);
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	align-items: center;
+}
+
+footer img {
+	width: 100%;
+	max-width: 183px;
+}
+
+footer ul {
+	list-style: none;
+	display: flex;
+	gap: 2rem;
+	justify-content: center;
+}
+
+.authors {
+	display: flex;
+	gap: 1rem;
+	justify-content: space-between;
+
+	border-top: 1px solid var(--gray);
+}
+
+.authors a {
+	text-decoration: underline;
+}
+
+footer,
+.authors {
+	padding: 1rem 2rem;
+}
+
+footer *,
+.authors * {
+	color: var(--gray);
+	font-size: 0.875rem;
+}
