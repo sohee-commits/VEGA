@@ -56,10 +56,167 @@ main > section:not(.summ) {
 	padding: 2rem;
 }
 
+/* form and form-con */
+
+.form-con {
+	display: flex;
+	gap: 4rem;
+	flex-wrap: wrap;
+
+	background-color: var(--main-color);
+}
+
+.form-con > * {
+	flex: 1;
+}
+
+.details-con p {
+	margin-bottom: 2rem;
+	font-size: 4rem;
+}
+
+.details-con .arrow-right {
+	font-size: 6rem;
+}
+
+.details-con img {
+	width: 100%;
+	height: 10rem;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 2.25rem;
+}
+
+form hr {
+	margin-bottom: 0.5rem;
+	display: block;
+
+	border: none;
+	height: 1px;
+	background-color: var(--black);
+}
+
+form input,
+form select {
+	width: 100%;
+	padding: 1rem 2rem;
+
+	font-size: 1.25rem;
+	background: none;
+	color: var(--black);
+	border: 1px solid var(--black);
+	border-radius: 4rem;
+}
+
+form input:focus-visible,
+form select:focus-visible {
+	outline: 0.1rem solid var(--black);
+}
+
+form select * {
+	color: var(--black);
+}
+
+form input::placeholder {
+	color: rgba(0, 23, 31, 0.5);
+}
+
+.form-con label,
+.form-con p,
+.form-con label span,
+.form-con p span {
+	color: var(--black);
+}
+
+form .group:not(.conc) {
+	display: flex;
+	gap: 2rem;
+}
+
+form .group > *,
+form .conc .input-group * {
+	width: 100%;
+}
+
+form .conc .input-group {
+	display: flex;
+	gap: 2rem;
+}
+
+form .conc label {
+	display: none;
+}
+
+form button {
+	padding: 1rem 2rem;
+	display: flex;
+	gap: 1rem;
+	justify-content: space-between;
+
+	font-size: 1.25rem;
+	background-color: var(--black);
+	border: none;
+	border-radius: 4rem;
+}
+
+form button:hover {
+	cursor: pointer;
+	outline: 0.1rem solid var(--black);
+	outline-offset: 0.1rem;
+}
+
+form button:active {
+	border: 0.1rem solid var(--black);
+	background-color: var(--main-color);
+}
+
+form button:active * {
+	color: var(--black);
+}
+
+form button * {
+	color: var(--main-color);
+}
+
+form button .arrow-right {
+	font-size: 1.75rem;
+}
+
 /* media queries */
+
+@media (max-width: 1225px) {
+	.details-con p {
+		font-size: 2.5rem;
+	}
+
+	.details-con .arrow-right {
+		font-size: 3rem;
+	}
+}
+
+@media (max-width: 1023px) {
+	.form-con {
+		flex-direction: column;
+	}
+
+	.details-con {
+		display: none;
+	}
+}
 
 @media (max-width: 768px) {
 	h2 {
 		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 520px) {
+	form .group:not(.conc),
+	form .conc .input-group {
+		flex-direction: column;
+		gap: 1rem;
 	}
 }

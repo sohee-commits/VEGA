@@ -111,7 +111,7 @@ h1 {
 }
 
 .service hr {
-	height: 0.06rem;
+	height: 1px;
 	margin: 0.25rem 0;
 	border: none;
 	background-color: var(--gray);
