@@ -34,7 +34,7 @@
         </h2>
         <div class="services-con">
           <!-- card -->
-          <section class="service">
+          <a href="./services.php" class="service">
             <div class="title">
               <div>
                 <img src="./assets/icons/icons8-truck-100.png" alt="иконка грузовика">
@@ -51,9 +51,9 @@
               <hr>
               <p class="bold">От 35 м³ до 92 м³</p>
             </div>
-          </section>
+          </a>
           <!-- card -->
-          <section class="service">
+          <a href="./services.php" class="service">
             <div class="title">
               <div>
                 <img src="./assets/icons/icons8-truck-100.png" alt="иконка грузовика">
@@ -70,9 +70,9 @@
               <hr>
               <p class="bold">33 европаллет</p>
             </div>
-          </section>
+          </a>
           <!-- card -->
-          <section class="service">
+          <a href="./services.php" class="service">
             <div class="title">
               <div>
                 <img src="./assets/icons/icons8-truck-100.png" alt="иконка грузовика">
@@ -89,9 +89,9 @@
               <hr>
               <p class="bold">33 европаллет</p>
             </div>
-          </section>
+          </a>
           <!-- card -->
-          <section class="service">
+          <a href="./services.php" class="service">
             <div class="title">
               <div>
                 <img src="./assets/icons/icons8-truck-100.png" alt="иконка грузовика">
@@ -108,9 +108,9 @@
               <hr>
               <p class="bold">По стране и по городу</p>
             </div>
-          </section>
+          </a>
           <!-- card -->
-          <section class="service">
+          <a href="./services.php" class="service">
             <div class="title">
               <div>
                 <img src="./assets/icons/icons8-truck-100.png" alt="иконка грузовика">
@@ -127,7 +127,7 @@
               <hr>
               <p class="bold">13,6 м³</p>
             </div>
-          </section>
+          </a>
         </div>
       </section>
       <section class="pros">

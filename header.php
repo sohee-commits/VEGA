@@ -39,10 +39,10 @@ foreach ($expectedFileNames as $fileName => $label) {
         <ul>
           <li><a href="./index.php" <?= $classAttributes['Главная'] ?>>Главная</a></li>
           <li><a href="./company.php" <?= $classAttributes['Компания'] ?>>Компания</a></li>
-          <li><a href="./for-partners.php"> <?= $classAttributes['Партнерам'] ?>Партнерам</a></li>
-          <li><a href="./news.php"> <?= $classAttributes['Новости'] ?>Новости</a></li>
-          <li><a href="./services.php"> <?= $classAttributes['Услуги'] ?>Услуги</a></li>
-          <li><a href="./contacts.php"> <?= $classAttributes['Контакты'] ?>Контакты</a></li>
+          <li><a href="./for-partners.php" <?= $classAttributes['Партнерам'] ?>>Партнерам</a></li>
+          <li><a href="./news.php" <?= $classAttributes['Новости'] ?>>Новости</a></li>
+          <li><a href="./services.php" <?= $classAttributes['Услуги'] ?>>Услуги</a></li>
+          <li><a href="./contacts.php" <?= $classAttributes['Контакты'] ?>>Контакты</a></li>
         </ul>
       </nav>
       <div class="btn-con">
@@ -57,10 +57,10 @@ foreach ($expectedFileNames as $fileName => $label) {
         <ul>
           <li><a href="./index.php" <?= $classAttributes['Главная'] ?>>Главная</a></li>
           <li><a href="./company.php" <?= $classAttributes['Компания'] ?>>Компания</a></li>
-          <li><a href="./for-partners.php"> <?= $classAttributes['Партнерам'] ?>Партнерам</a></li>
-          <li><a href="./news.php"> <?= $classAttributes['Новости'] ?>Новости</a></li>
-          <li><a href="./services.php"> <?= $classAttributes['Услуги'] ?>Услуги</a></li>
-          <li><a href="./contacts.php"> <?= $classAttributes['Контакты'] ?>Контакты</a></li>
+          <li><a href="./for-partners.php" <?= $classAttributes['Партнерам'] ?>>Партнерам</a></li>
+          <li><a href="./news.php" <?= $classAttributes['Новости'] ?>>Новости</a></li>
+          <li><a href="./services.php" <?= $classAttributes['Услуги'] ?>>Услуги</a></li>
+          <li><a href="./contacts.php" <?= $classAttributes['Контакты'] ?>>Контакты</a></li>
         </ul>
       </nav>
       <div class="right-con">
