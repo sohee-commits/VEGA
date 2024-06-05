@@ -1,7 +1,12 @@
 <?php
-$dbhost = "localhost";
-$dbuser = "root";
-$dbpass = "1234";
-$dbname = "vega";
-$conn = new mysqli($dbhost, $dbuser, $dbpass, $dbname) or die("Connect failed: %s\n" . $conn->error);
-return $conn;
+
+$hostName = "localhost";
+$dbUser = "root";
+$dbPassword = "1234";
+$dbName = "vega";
+
+$conn = mysqli_connect($hostName, $dbUser, $dbPassword, $dbName);
+
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
+}
