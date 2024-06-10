@@ -75,7 +75,6 @@ header .btn-con a:hover {
 }
 
 .mobile-header nav.show {
-	box-sizing: border-box;
 	padding: 1rem;
 	width: 100%;
 	height: 100vh;
