@@ -163,22 +163,22 @@
           </a>
         </div>
         <section class="news-con">
-          <a href="./news.php" class="new">
-            <h3>Пример очень интересной новости в две строки</h3>
-            <small class="bold">29.05.2024</small>
-          </a>
-          <a href="./news.php" class="new">
-            <h3>Пример очень интересной новости в две строки</h3>
-            <small class="bold">29.05.2024</small>
-          </a>
-          <a href="./news.php" class="new">
-            <h3>Пример очень интересной новости в две строки</h3>
-            <small class="bold">29.05.2024</small>
-          </a>
-          <a href="./news.php" class="new">
-            <h3>Пример очень интересной новости в две строки</h3>
-            <small class="bold">29.05.2024</small>
-          </a>
+          <?php
+          require './config.php';
+
+          $sql = "SELECT content, date FROM news";
+          $result = $conn->query($sql);
+
+          while ($row = $result->fetch_assoc()) {
+            $title_arr = explode(" ", $row["content"]);
+            $title = implode(" ", array_slice($title_arr, 0, 7));
+
+            echo '<article class="new">';
+            echo '<h3>' . $title . '...</h3>';
+            echo '<small class="bold">' . $row["date"] . '</small>';
+            echo '</article>';
+          }
+          ?>
         </section>
       </section>
       <section class="form-con">
