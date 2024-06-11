@@ -8,9 +8,3 @@ document.querySelector('.open-menu').addEventListener('click', () => {
 		document.body.style.overflow = 'scroll';
 	}
 });
-
-// close dialog on any key
-document.addEventListener('keydown', () => {
-	document.querySelector(`dialog`).close();
-	document.querySelector(`dialog`).style.display = `none`;
-});

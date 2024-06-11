@@ -101,17 +101,11 @@ function manipulatePopup(servicesList) {
 					src="./assets/services/${servicesList[index].src}-3.jpg" 
 					alt="${servicesList[index].name}">
 				</div>
-				<!-- кнопки перехода к слайду n -->
-				<div class="slider-nav">
-					<a href="#slide-1"></a>
-					<a href="#slide-2"></a>
-					<a href="#slide-3"></a>
-					<a href="#slide-4"></a>
-				</div>
 			</div>
       <p>${servicesList[index].shortDescription}</p>
-      <button id="close-popup">Закрыть</button>
-    `;
+      <button id="close-popup">
+				<img src="./assets/icons/icons8-close.svg" alt="X">
+			</button>`;
 			form.setAttribute(`action`, ``);
 			form.setAttribute(`method`, `POST`);
 			form.setAttribute(`service-data`, servicesList[index].name);
