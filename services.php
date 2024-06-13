@@ -21,6 +21,9 @@
         </div>
         <!-- services render reactive -->
       </section>
+
+      <?php require_once './form.php' ?>
+
     </main>
 
     <?php require_once ('./footer.php'); ?>
