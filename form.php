@@ -8,33 +8,34 @@
       <span class="arrow-right">></span><br>
       Мы вам перезвоним
     </p>
-    <img src="./assets/logotype.png" alt="шаблон фотографии">
+    <img src="./assets/logotype.png" alt="одна из форм логотипа веги: только грузовая машина">
   </section>
-  <form action="" method="POST">
+  <form action="send_email.php" method="POST">
     <!-- full name -->
     <div class="input-group">
       <label for="fullname">КОНТАКТНОЕ ЛИЦО <span class="bold">*</span></label>
       <hr>
-      <input type="text" name="fullname" id="fullname" placeholder="Фамилия Имя Отчество">
+      <input type="text" name="fullname" id="fullname" placeholder="Фамилия Имя Отчество" minlength="2" maxlength="120"
+        required>
     </div>
     <!-- number, inn -->
     <div class="group">
       <div class="input-group">
         <label for="phonenumber">НОМЕР ТЕЛЕФОНА <span class="bold">*</span></label>
         <hr>
-        <input type="text" name="phonenumber" id="phonenumber" placeholder="+ 7">
+        <input type="number" name="phonenumber" id="phonenumber" placeholder="+ 7" minlength="11" required>
       </div>
       <div class="input-group">
         <label for="inn">ИНН <span class="bold">*</span></label>
         <hr>
-        <input type="text" name="inn" id="inn" placeholder="00 00 00000 0">
+        <input type="number" name="inn" id="inn" placeholder="00 00 00000 0" minlength="10" required>
       </div>
     </div>
     <!-- service -->
     <div class="input-group">
       <label for="service">УСЛУГА <span class="bold">*</span></label>
       <hr>
-      <select name="service" id="service">
+      <select name="service" id="service" required>
         <option value="Другое" selected>Другое</option>
         <option value="Тентовые перевозки">Тентовые перевозки</option>
         <option value="Изотермические перевозки">Изотермические перевозки</option>
@@ -50,10 +51,10 @@
       <div class="input-group">
         <!-- where from -->
         <label for="where-from"></label>
-        <input type="text" name="where-from" id="where-from" placeholder="Откуда">
+        <input type="text" name="where-from" id="where-from" placeholder="Откуда" minlength="2" required>
         <!-- where to -->
         <label for="where-to"></label>
-        <input type="text" name="where-to" id="where-to" placeholder="Куда">
+        <input type="text" name="where-to" id="where-to" placeholder="Куда" minlength="2" required>
       </div>
     </div>
     <button type="submit">

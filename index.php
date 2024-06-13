@@ -166,17 +166,14 @@
           <?php
           require './config.php';
 
-          $sql = "SELECT content, date FROM news";
+          $sql = "SELECT name, date, id FROM news";
           $result = $conn->query($sql);
 
           while ($row = $result->fetch_assoc()) {
-            $title_arr = explode(" ", $row["content"]);
-            $title = implode(" ", array_slice($title_arr, 0, 7));
-
-            echo '<article class="new">';
-            echo '<h3>' . $title . '...</h3>';
+            echo "<a href='./news.php?id={$row['id']}' class='new'>";
+            echo '<h3>' . $row["name"] . '</h3>';
             echo '<small class="bold">' . $row["date"] . '</small>';
-            echo '</article>';
+            echo '</a>';
           }
           ?>
         </section>
