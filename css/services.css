@@ -82,27 +82,27 @@ body {
 	transform: scaleX(1);
 }
 
-/* popup.style.display = 'grid'; */
-dialog {
-	top: 2rem;
-
-	margin: auto;
-	padding: 0;
-	width: 70%;
-	height: 70%;
-
-	grid-template-columns: repeat(2, 1fr);
-
-	border: 0.1rem solid var(--gray);
-	border-radius: 1rem;
-	overflow: hidden;
+.service-con {
+	display: flex;
 }
 
-dialog > * {
-	overflow-y: auto;
+.service-con > * {
+	flex: 1;
 }
 
-dialog .description {
+.service-con .details-con {
+	display: none;
+}
+
+.form-con form {
+	padding: 1rem;
+}
+
+.form-con .input-group:has(select) {
+	display: none;
+}
+
+.description {
 	position: relative;
 
 	padding: 2rem;
@@ -117,19 +117,14 @@ dialog .description {
 	color: var(--white);
 }
 
-dialog .description img {
-	height: 15rem;
-	border-radius: 1rem;
-}
-
-dialog .description h3 {
+.description h3 {
 	font-size: 1.5rem;
 }
 
 #close-popup {
 	position: absolute;
 	top: 0;
-	left: 0;
+	right: 2rem;
 
 	padding: 0.25rem;
 
@@ -150,28 +145,6 @@ dialog .description h3 {
 	opacity: 0.8;
 }
 
-dialog form {
-	padding: 1rem;
-	height: 100%;
-	min-height: fit-content;
-
-	background-color: var(--main-color);
-}
-
-dialog label,
-dialog form p,
-dialog form span {
-	color: var(--black);
-}
-
-dialog form button * {
-	color: var(--main-color);
-}
-
-dialog form .conc .input-group {
-	flex-direction: column;
-}
-
 .slider-wrapper {
 	position: relative;
 
@@ -180,7 +153,7 @@ dialog form .conc .input-group {
 
 .slider {
 	width: 100%;
-	height: 15rem;
+	height: 20rem;
 
 	display: flex;
 
@@ -189,8 +162,7 @@ dialog form .conc .input-group {
 
 	overflow-x: auto;
 	overflow-y: hidden;
-	scroll-snap-type: x mandatory;
-	scroll-behavior: smooth;
+	scroll-snap-type: x proximity;
 }
 
 .slider img {
@@ -209,8 +181,8 @@ dialog form .conc .input-group {
 }
 
 @media (max-width: 830px) {
-	dialog {
-		grid-template-columns: 1fr;
+	.service-con {
+		flex-direction: column;
 	}
 }
 
@@ -227,9 +199,5 @@ dialog form .conc .input-group {
 
 	.services .title {
 		font-size: 2rem;
-	}
-
-	dialog form button span:last-child {
-		display: none;
 	}
 }
