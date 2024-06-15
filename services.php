@@ -44,7 +44,7 @@
             if (file_exists($imgPath)) {
               echo "<img src='" . $imgPath . "' alt='" . htmlspecialchars($row['name']) . "'>";
             } else {
-              echo "<img src='./assets/icons/default.jpg' alt='Default Image'>";
+              continue;
             }
           }
 

@@ -41,36 +41,25 @@
           </section>
         </section>
         <section class="services-con">
-          <a href="./services.php" class="service">
-            <div>
-              <img src="./assets/icons/icons8-truck-100.png" alt="иконка грузовика">
-            </div>
-            <p>Тентовые перевозки</p>
-          </a>
-          <a href="./services.php" class="service">
-            <div>
-              <img src="./assets/icons/icons8-truck-100.png" alt="иконка грузовика">
-            </div>
-            <p>Изотермические перевозки</p>
-          </a>
-          <a href="./services.php" class="service">
-            <div>
-              <img src="./assets/icons/icons8-truck-100.png" alt="иконка грузовика">
-            </div>
-            <p>Рефрижераторные перевозки</p>
-          </a>
-          <a href="./services.php" class="service">
-            <div>
-              <img src="./assets/icons/icons8-truck-100.png" alt="иконка грузовика">
-            </div>
-            <p>Экспедирование и Логистика</p>
-          </a>
-          <a href="./services.php" class="service">
-            <div>
-              <img src="./assets/icons/icons8-truck-100.png" alt="иконка грузовика">
-            </div>
-            <p>Бортовые перевозки</p>
-          </a>
+          <?php
+          require './config.php';
+
+          $sql = "SELECT name, id FROM services";
+          $result = $conn->query($sql);
+
+          while ($row = $result->fetch_assoc()) {
+            echo "
+            <a href='./services.php?id=" . $row['id'] . "' class='service'>
+              <div>
+                <img src='./assets/icons/icons8-truck-100.png' alt='иконка грузовика'>
+              </div>
+              <p>" . $row['name'] . "</p>
+            </a>
+            ";
+          }
+
+          $conn->close();
+          ?>
         </section>
       </section>
 
