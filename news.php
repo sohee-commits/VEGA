@@ -48,7 +48,9 @@
           $result = $conn->query($sql);
 
           while ($row = $result->fetch_assoc()) {
-            echo "<a href='./news.php?id=" . $row['id'] . " class='new'>";
+            echo "<a href='./news.php?id="
+              . htmlspecialchars($row['id'])
+              . "' class='new'>";
             echo "<h3>" . htmlspecialchars($row["name"]) . "</h3>";
             echo "<small>" . htmlspecialchars($row["date"]) . "</small>";
             echo "</a>";
