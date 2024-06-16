@@ -23,7 +23,7 @@
       <div class="input-group">
         <label for="phonenumber">НОМЕР ТЕЛЕФОНА <span class="bold">*</span></label>
         <hr>
-        <input type="number" name="phonenumber" id="phonenumber" placeholder="+ 7" minlength="11" required>
+        <input type="tel" name="phonenumber" id="phonenumber" placeholder="+ 7" minlength="7" required>
       </div>
       <div class="input-group">
         <label for="inn">ИНН <span class="bold">*</span></label>
