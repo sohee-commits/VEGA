@@ -98,10 +98,6 @@ body {
 	padding: 1rem;
 }
 
-.form-con .input-group:has(select) {
-	display: none;
-}
-
 .description {
 	position: relative;
 

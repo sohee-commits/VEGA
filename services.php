@@ -17,7 +17,7 @@
       require './config.php';
 
       if (isset($_GET['id'])) {
-        $id = intval($_GET['id']); // Convert id to integer for safety
+        $id = intval($_GET['id']); 
       
         $sql = "SELECT name, description, src, id FROM services WHERE id = ?";
         $stmt = $conn->prepare($sql);

@@ -41,12 +41,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail->Body = "Контактное лицо: $fullname\nТелефон: $phonenumber\nИНН: $inn\nУслуга: $service\nОткуда: $where_from\nКуда: $where_to";
 
     $mail->send();
-    echo "<script>alert('Ваша заявка успешно отправлена. Мы свяжемся с вами в ближайшее время.');</script>";
+    echo "<script>alert(" . json_encode('Ваша заявка успешно отправлена. Мы свяжемся с вами в ближайшее время.') . ");</script>";
     echo "<script>window.location.href = 'index.php';</script>";
   } catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    echo "<script>console.error('Message could not be sent. Mailer Error: " . addslashes($mail->ErrorInfo) . "');</script>";
+    echo "Кажется, произошла ошибка. <a href='./index.php'>Вернуться назад.</a>";
   }
 } else {
-  echo "<script>alert('Ошибка при отправке заявки. Пожалуйста, попробуйте позже.');</script>";
+  echo "<script>alert(" . json_encode('Ошибка при отправке заявки. Пожалуйста, попробуйте позже.') . ");</script>";
   echo "<script>window.location.href = 'index.php';</script>";
 }
