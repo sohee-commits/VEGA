@@ -67,7 +67,7 @@ main > * {
 	transition: background-color 0.2s;
 }
 
-.contacts-con .contact button:hover {
+.contacts-con .contact .copyBtn:hover {
 	background-color: rgb(127, 138, 142, 0.8);
 	cursor: pointer;
 }
