@@ -7,6 +7,7 @@
     <title>Вега.Логистика - Контакты</title>
     <link rel="shortcut icon" href="./assets/logotype-icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="./css/contacts.css">
+    <script src="./scripts/contacts.js" defer></script>
   </head>
 
   <body>
@@ -25,12 +26,12 @@
         <div class="contact">
           <p>НОМЕР ТЕЛЕФОНА</p>
           <hr>
-          <button>8 967 903 95 97</button>
+          <button class="copyBtn">8 967 903 95 97</button>
         </div>
         <div class="contact">
           <p>ЭЛЕКТРОННАЯ ПОЧТА</p>
           <hr>
-          <button>zorina.olga.73@mail.ru</button>
+          <button class="copyBtn">zorina.olga.73@mail.ru</button>
         </div>
         <div class="contact">
           <p>ГРАФИК РАБОТЫ</p>
@@ -40,17 +41,17 @@
         <div class="contact">
           <p>РЕКВИЗИТЫ</p>
           <hr>
-          <button>ООО «Вега»</button>
+          <button class="copyBtn">ООО «Вега»</button>
         </div>
         <div class="contact">
           <p>ИНН</p>
           <hr>
-          <button>59 04 01077 0</button>
+          <button class="copyBtn">59 04 01077 0</button>
         </div>
         <div class="contact">
           <p>ОГРН</p>
           <hr>
-          <button>1155958000032</button>
+          <button class="copyBtn">1155958000032</button>
         </div>
       </section>
     </main>

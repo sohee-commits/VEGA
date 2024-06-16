@@ -63,6 +63,13 @@ main > * {
 
 	font-size: 1.25rem;
 	text-align: left;
+
+	transition: background-color 0.2s;
+}
+
+.contacts-con .contact button:hover {
+	background-color: rgb(127, 138, 142, 0.8);
+	cursor: pointer;
 }
 
 /* media queries */
