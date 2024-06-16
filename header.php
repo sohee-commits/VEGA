@@ -46,7 +46,7 @@ foreach ($expectedFileNames as $fileName => $label) {
         </ul>
       </nav>
       <div class="btn-con">
-        <a href="./contacts">Заказать</a>
+        <a href="./contacts.php">Заказать</a>
       </div>
     </header>
 
