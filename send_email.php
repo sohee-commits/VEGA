@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Получатель
     $mail->setFrom('zorro25915@gmail.com', 'Mailer');
-    $mail->addAddress('zorro25915@gmail.com');
+    $mail->addAddress('zorina.olga.73@mail.ru');
 
     // Содержание письма
     $mail->isHTML(false);
