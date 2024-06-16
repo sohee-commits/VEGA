@@ -84,6 +84,7 @@ main > section:not(.summ) {
 	object-fit: contain;
 	object-position: center;
 	border-radius: 1rem;
+	width: 100%;
 }
 
 form {
@@ -204,7 +205,8 @@ form button .arrow-right {
 		flex-direction: column;
 	}
 
-	.details-con {
+	.details-con p span,
+	.details-con img {
 		display: none;
 	}
 }
