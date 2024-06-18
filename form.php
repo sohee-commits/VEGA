@@ -15,8 +15,7 @@
     <div class="input-group">
       <label for="fullname">КОНТАКТНОЕ ЛИЦО <span class="bold">*</span></label>
       <hr>
-      <input type="text" name="fullname" id="fullname" placeholder="Фамилия Имя Отчество" minlength="2" maxlength="120"
-        required>
+      <input type="text" name="fullname" id="fullname" placeholder="Имя" minlength="2" maxlength="120" required>
     </div>
     <!-- number, inn -->
     <div class="group">

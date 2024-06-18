@@ -17,9 +17,9 @@
       require './config.php';
 
       if (isset($_GET['id'])) {
-        $id = intval($_GET['id']); 
-      
-        $sql = "SELECT name, description, src, id FROM services WHERE id = ?";
+        $id = intval($_GET['id']);
+
+        $sql = "SELECT name, description, description_full, src, id FROM services WHERE id = ?";
         $stmt = $conn->prepare($sql);
         $stmt->bind_param('i', $id);
         $stmt->execute();
@@ -32,7 +32,9 @@
 
           echo '<section class="description">';
           echo "<h3>" . htmlspecialchars($row['name']) . "</h3>";
-          echo "<p>" . htmlspecialchars($row['description']) . ".</p>";
+          echo "<p>";
+          echo $row['description_full'] != '-' ? $row['description_full'] : $row['description'];
+          echo "</p>";
           echo "
           <div class='slider-wrapper'>
             <!-- slides -->

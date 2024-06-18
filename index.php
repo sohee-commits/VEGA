@@ -34,7 +34,7 @@
         </h2>
         <div class="services-con">
           <!-- card -->
-          <a href="./services.php" class="service">
+          <a href="./services.php?id=1" class="service">
             <div class="title">
               <div>
                 <img src="./assets/icons/icons8-truck-100.png" alt="иконка грузовика">
@@ -53,7 +53,7 @@
             </div>
           </a>
           <!-- card -->
-          <a href="./services.php" class="service">
+          <a href="./services.php?id=2" class="service">
             <div class="title">
               <div>
                 <img src="./assets/icons/icons8-truck-100.png" alt="иконка грузовика">
@@ -72,7 +72,7 @@
             </div>
           </a>
           <!-- card -->
-          <a href="./services.php" class="service">
+          <a href="./services.php?id=3" class="service">
             <div class="title">
               <div>
                 <img src="./assets/icons/icons8-truck-100.png" alt="иконка грузовика">
@@ -91,7 +91,7 @@
             </div>
           </a>
           <!-- card -->
-          <a href="./services.php" class="service">
+          <a href="./services.php?id=4" class="service">
             <div class="title">
               <div>
                 <img src="./assets/icons/icons8-truck-100.png" alt="иконка грузовика">
@@ -110,7 +110,7 @@
             </div>
           </a>
           <!-- card -->
-          <a href="./services.php" class="service">
+          <a href="./services.php?id=5" class="service">
             <div class="title">
               <div>
                 <img src="./assets/icons/icons8-truck-100.png" alt="иконка грузовика">
