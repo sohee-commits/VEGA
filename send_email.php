@@ -5,12 +5,12 @@ use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $fullname = htmlspecialchars(trim($_POST["fullname"]));
-  $phonenumber = htmlspecialchars(trim($_POST["phonenumber"]));
-  $inn = htmlspecialchars(trim($_POST["inn"]));
-  $service = htmlspecialchars(trim($_POST["service"]));
-  $where_from = htmlspecialchars(trim($_POST["where-from"]));
-  $where_to = htmlspecialchars(trim($_POST["where-to"]));
+  $fullname = htmlspecialchars(strip_tags(trim($_POST["fullname"])));
+  $phonenumber = htmlspecialchars(strip_tags(trim($_POST["phonenumber"])));
+  $inn = htmlspecialchars(strip_tags(trim($_POST["inn"])));
+  $service = htmlspecialchars(strip_tags(trim($_POST["service"])));
+  $where_from = htmlspecialchars(strip_tags(trim($_POST["where-from"])));
+  $where_to = htmlspecialchars(strip_tags(trim($_POST["where-to"])));
 
   $mail = new PHPMailer(true);
 
