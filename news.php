@@ -7,9 +7,7 @@
     <title>Вега.Логистика - Новости</title>
     <link rel="shortcut icon" href="./assets/logotype-icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="./css/news.css">
-  </head>
 
-  <body>
     <?php require_once ('./header.php'); ?>
 
     <main>
@@ -77,6 +75,6 @@
     </main>
 
     <?php require_once ('./footer.php'); ?>
-  </body>
+    </body>
 
 </html>

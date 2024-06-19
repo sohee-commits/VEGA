@@ -8,9 +8,7 @@
     <link rel="shortcut icon" href="./assets/logotype-icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="./css/contacts.css">
     <script src="./scripts/contacts.js" defer></script>
-  </head>
-
-  <body>
+  
     <?php require_once ('./header.php'); ?>
 
     <main>
@@ -59,4 +57,4 @@
     <?php require_once ('./footer.php'); ?>
   </body>
 
-</html>
+</  html>

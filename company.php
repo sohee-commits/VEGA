@@ -7,9 +7,7 @@
     <title>Вега.Логистика - О компании</title>
     <link rel="shortcut icon" href="./assets/logotype-icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="./css/company.css">
-  </head>
-
-  <body>
+  
     <?php require_once ('./header.php'); ?>
 
     <main>
@@ -70,4 +68,4 @@
     <?php require_once ('./footer.php'); ?>
   </body>
 
-</html>
+</  html>

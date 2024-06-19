@@ -7,9 +7,7 @@
     <title>Вега.Логистика - Доставка грузов по всей России</title>
     <link rel="shortcut icon" href="./assets/logotype-icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="./css/index.css">
-  </head>
-
-  <body>
+  
     <?php require_once ('./header.php'); ?>
 
     <main>
