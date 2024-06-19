@@ -28,8 +28,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail->CharSet = 'UTF-8';
 
     // Режим отладки
-    $mail->SMTPDebug = 2; // 0 = off (for production use), 1 = client messages, 2 = client and server messages
-    $mail->Debugoutput = 'html';
+    // $mail->SMTPDebug = 2; // 0 = off (for production use), 1 = client messages, 2 = client and server messages
+    // $mail->Debugoutput = 'html';
 
     // Получатель
     $mail->setFrom('zorro25915@gmail.com', 'Mailer');
